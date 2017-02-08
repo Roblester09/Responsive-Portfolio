@@ -23,7 +23,6 @@ header {
 
 #nav-container {
 	max-width: 960px;
-	min-width: 300px;
 	margin: 0 auto;
 }
 
@@ -226,18 +225,148 @@ textarea {
 /* Begin Footer Formatting */
 
 #site-footer {
-	position: fixed;
-	right: 0;
-	left: 0;
-	bottom: 0;
+	position: sticky;
+	clear: both;
 	text-align: center;
 	font-size: 12px;
-  	background-color: #666666;
+  background-color: #666666;
 	margin-top: 30px;
-  	padding: 25px;
-  	color: #ffffff;
-  	border-top: solid #cccccc 5px;
-  	width: 100%;
+  padding: 25px;
+  color: #ffffff;
+  border-top: solid #cccccc 5px;
+  width: 100%;
 }
 
 /* End Footer Formatting */
+
+@media screen and (max-width: 980px) {
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+	header {
+		width: 100%;
+	}
+
+	#nav-container {
+		max-width: 725px;
+		margin: 0 auto;
+	}
+
+	.site-nav {
+		margin: 25px 20px 20px 0;
+		padding-right: 20px;
+		color: #777777;
+		border-right: solid 1px #777777;
+		font-size: 18px;
+	}
+
+	#add-margin {
+		margin-left: 211px;
+	}
+
+	#no-border {
+		padding-right: 0;
+	}
+
+	#content-section {
+		width: 728px;
+		float: none;
+		margin: 35px 20px;
+	}
+
+	#bio-image {
+		width: 300px;
+		height: 300px;
+	}
+
+	#top-paragraph {
+		line-height: 25px;
+		padding-bottom: 0;
+	}
+
+	#contact-info {
+		width: 728px;
+		float: none;
+		margin: 0 20px;
+		box-sizing: border-box;
+	}
+
+	#site-footer {
+		position: static;
+	  padding: 25px 0;
+		margin-top: 35px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	header {
+		height: 100%;
+		width: 100%;
+	}
+
+	#site-title {
+		padding: 20px 0px;
+		text-align: center;
+		float: none;
+	}
+
+	#nav-list {
+		text-align: center;
+	}
+
+	.site-nav {
+		float: none;
+		padding-left: 75px;
+		padding-right: 75px;
+		margin: 10px 0;
+	}
+
+	#add-margin {
+		margin: 0;
+	}
+
+	#container {
+	}
+
+	#content-section {
+		width: 600px;
+		float: none;
+		margin: 20px;
+	}
+
+	#bio-image {
+		float: none;
+		width: 550px;
+	}
+
+	#top-paragraph {
+		line-height: normal;
+		padding-bottom: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	#contact-info {
+		width: 600px;
+		float: none;
+		margin: 0 20px;
+		box-sizing: border-box;
+	}
+
+	#site-footer {
+		position: static;
+	  padding: 25px 0;
+	  color: #ffffff;
+	  border-top: solid #cccccc 5px;
+	  width: 100%;
+	}
+
+}
