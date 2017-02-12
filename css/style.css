@@ -225,27 +225,35 @@ textarea {
 /* Begin Footer Formatting */
 
 #site-footer {
-	position: sticky;
-	clear: both;
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 0;
 	text-align: center;
 	font-size: 12px;
-  background-color: #666666;
+	background-color: #666666;
 	margin-top: 30px;
-  padding: 25px 0;
-  color: #ffffff;
-  border-top: solid #cccccc 5px;
-  width: 100%;
+	padding: 25px;
+	color: #ffffff;
+	border-top: solid #cccccc 5px;
+	width: 100%;
 }
 
 /* End Footer Formatting */
 
 @media screen and (max-width: 980px) {
 
-
+	body {
+		min-width: 980px;
+	}
 
 }
 
 @media screen and (max-width: 768px) {
+
+	body {
+		min-width: 768px;
+	}
 
 	header {
 		width: 100%;
@@ -278,8 +286,6 @@ textarea {
 		margin: 35px 20px;
 	}
 
-	
-
 	#top-paragraph {
 		line-height: 25px;
 		padding-bottom: 0;
@@ -294,13 +300,17 @@ textarea {
 
 	#site-footer {
 		position: static;
-	  padding: 25px 0;
+	  	padding: 25px 0;
 		margin-top: 35px;
 	}
 
 }
 
 @media screen and (max-width: 640px) {
+
+	body {
+		min-width: 640px;
+	}
 
 	header {
 		height: 100%;
@@ -343,6 +353,31 @@ textarea {
 		padding-bottom: 0;
 	}
 
+	.port-images {
+		float: none;
+		height: 225px;
+	}
+
+	#project-rpggame {
+		margin-right: 0;
+	}
+
+	#project-trivia {
+		margin-left: 0;
+	}
+
+	#project-widget {
+		margin-right: 0;
+	}
+
+	#project-rps {
+		margin-left: 0;
+	}
+
+	#project-hangman {
+		margin-right: 0;
+	}
+
 	#contact-info {
 		width: 600px;
 		float: none;
@@ -352,10 +387,10 @@ textarea {
 
 	#site-footer {
 		position: static;
-	  padding: 25px 0;
-	  color: #ffffff;
-	  border-top: solid #cccccc 5px;
-	  width: 100%;
+		padding: 25px 0;
+	  	color: #ffffff;
+	  	border-top: solid #cccccc 5px;
+	  	width: 100%;
 	}
 
 }
